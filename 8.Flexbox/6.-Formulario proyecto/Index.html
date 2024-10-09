@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+            <h1>Encuesta Programacion</h1>
+            <p>Gracias por el tiempo de contectar la encuesta</p>
+        </header>
+        <form action="">
+         <div class="input-text">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+          <label for="age">Edad:</label>
+          <input type="number" id="age" name="age" placeholder="Ingresa tu edad" min="10" max="95" required>
+          <label for="rol">Selecciona tu situacion actual:</label>
+          <select name="rol" id="rol" required>
+            <option value selected disabled>Selecciona una opcion</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="trabajo">Trabajo</option>
+            <option value="desempleado">Desempleado</option>
+            <option value="otro">Otro</option>
+         </select>
+         </div>
+         <div class="input-radio">
+            <p>¿Nos recomendarias a un amigo?</p>
+      <label>
+        <input type="radio" name="recommend" value="si" checked>
+        Si
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="no">
+        No
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="tal_vez">
+        Tal vez
+      </label>
+      </div>
+      <div class="input-text">
+        <p>¿Cual es tu hobbie favorito?</p>
+        <select name="hobbie" id="hobbie" required>
+            <option value disabled selected>Selecciona una opcion</option>
+            <option value="videojuegos">Videojuegos</option>
+            <option value="deporte">Deporte</option>
+            <option value="manualidades">Manualidades</option>
+            <option value="otro">Otro</option>
+        </select>
+    </div>
+        <div class="input-check">
+            <p>Selecciona tus hobbies <span class="clue">(Selecciona todas las que apliquen)</span></p>
+            <label>
+                <input type="checkbox" value="futbol">
+                Futbol
+            </label>
+            <label>
+                <input type="checkbox" value="baseball">
+                Baseball
+            </label>
+            <label>
+                <input type="checkbox" value="voleibol">
+                Voleibol
+            </label>
+            <label>
+                <input type="checkbox" value="estrategia">
+                Juegos de estrategia
+            </label>
+            <label>
+                <input type="checkbox" value="shooter">
+                Juegos shooter
+            </label>
+            <label>
+                <input type="checkbox" value="roblox">
+                Roblox
+            </label>
+            <label>
+                <input type="checkbox" value="leer">
+                Leer
+            </label>
+            <label>
+                <input type="checkbox" value="brawl_stars">
+                Brawl stars
+            </label>
+            <label>
+                <input type="checkbox" value="senderismo">
+                Senderismo
+            </label>
+            <label>
+                <input type="checkbox" value="voleibol">
+                Danza
+            </label>
+            <label>
+                <input type="checkbox" value="mecanica">
+                Mecanica
+            </label>
+            </div>
+            <div class="input-text-area">
+                <p>Tienes algun cometario o sugerencia</p>
+                <textarea name="comments"placeholder="Escribe aqui tus comentarios...."></textarea>
+            </div>
+            <div class="btn-submit">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
